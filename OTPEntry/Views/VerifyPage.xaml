@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:OTPEntry.Controls"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             x:Class="OTPEntry.Views.VerifyPage">
+   <AbsoluteLayout>       
+           <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0" Margin="0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">                                            
+                   <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="20" RowSpacing="8">
+                       <Grid.RowDefinitions>
+                          <RowDefinition Height="Auto"/>
+                          <RowDefinition Height="Auto"/>
+                          <RowDefinition Height="Auto"/>
+                          <RowDefinition Height="Auto"/>                                           
+                      </Grid.RowDefinitions>
+                      <Label Grid.Row="0" Text="Please Enter The Verification" FontFamily="HelveticaNeue-Bold" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                      <Label Grid.Row="1" Text="Code Below" FontFamily="HelveticaNeue-Bold" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                      <Grid Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="2" Margin="0,30,0,30" >
+                          <Grid.RowDefinitions>
+                              <RowDefinition Height="55"/>                       
+                          </Grid.RowDefinitions>
+                                <Frame x:Name="FirstFrame" Grid.Row="0" Grid.Column="0" Padding="0" CornerRadius="28" IsClippedToBounds="True" HasShadow="False" BorderColor="#dbdbdb" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">                                  
+                                      <controls:CustomEntryOTP x:Name="FirstCode" Keyboard="Numeric" TextColor="Black" FontFamily="Helve ticaNeue" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                                </Frame>
+                                <Frame x:Name="SecondFrame" Grid.Row="0" Grid.Column="1" Padding="0" CornerRadius="28" IsClippedToBounds="True" HasShadow="False" BorderColor="#dbdbdb" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">                                 
+                                    <controls:CustomEntryOTP x:Name="SecondCode" Keyboard="Numeric" TextColor="Black" FontFamily="Helve ticaNeue" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                                </Frame>
+                                <Frame x:Name="ThirdFrame" Grid.Row="0" Grid.Column="2" Padding="0" CornerRadius="28" IsClippedToBounds="True" HasShadow="False" BorderColor="#dbdbdb" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">                                 
+                                    <controls:CustomEntryOTP x:Name="ThirdCode" Keyboard="Numeric" TextColor="Black" FontFamily="Helve ticaNeue" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                                </Frame>
+                                <Frame x:Name="FourthFrame" Grid.Row="0" Grid.Column="3" Padding="0" CornerRadius="28" IsClippedToBounds="True" HasShadow="False" BorderColor="#dbdbdb" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">                                 
+                                    <controls:CustomEntryOTP x:Name="FourthCode" Keyboard="Numeric" TextColor="Black" FontFamily="Helve ticaNeue" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                                </Frame>
+                                <Frame x:Name="FifthFrame" Grid.Row="0" Grid.Column="4" Padding="0" CornerRadius="28" IsClippedToBounds="True" HasShadow="False" BorderColor="#dbdbdb" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">                                  
+                                    <controls:CustomEntryOTP x:Name="FifthCode" Keyboard="Numeric" TextColor="Black" FontFamily="Helve ticaNeue" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                                </Frame>
+                                <Frame x:Name="SixthFrame" Grid.Row="0" Grid.Column="5" Padding="0" CornerRadius="28" IsClippedToBounds="True" HasShadow="False" BorderColor="#dbdbdb" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">                                  
+                                    <controls:CustomEntryOTP x:Name="SixthCode" MaxLength="1" Keyboard="Numeric" TextColor="Black" FontFamily="Helve ticaNeue" FontAttributes="Bold" FontSize="20" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"/>
+                                </Frame>                                                      
+                      </Grid>                     
+                      <Frame Grid.Row="3" HeightRequest="55" Padding="0" CornerRadius="30" HasShadow="False" IsClippedToBounds="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BorderColor="#dbdbdb" Margin="0,170,0,10">
+                          <StackLayout BackgroundColor="#9346aa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                              <Label Text="VERIFY" FontSize="16" TextColor="White" FontFamily="HelveticaNeue-Medium" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                          </StackLayout>                         
+                      </Frame>                                                              
+               </Grid>                         			          
+            </StackLayout>                         
+		</AbsoluteLayout>
+</ContentPage>
